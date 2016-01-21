@@ -297,6 +297,8 @@ nodejs:
         version: '5'
     npm_packages:
         - bower
+        - sails
+        - grunt-cli
 hhvm:
     install: '0'
     nightly: 0
