@@ -19,15 +19,21 @@ vagrantfile:
                     guest: '80'
                 vflnp_sails:
                     host: '5037'
-                    guest: '1337'
+                    guest: '5037'
+                vflnp_angular:
+                    host: '5038'
+                    guest: '5038'
+                vflnp_angular2:
+                    host: '5040'
+                    guest: '5040'
         post_up_message: ''
         provider:
             virtualbox:
                 modifyvm:
                     natdnshostresolver1: 'on'
                 showgui: '0'
-                setextradata:
-                    VBoxInternal2/SharedFoldersEnableSymlinksCreate/v-root: 1                
+#                setextradata:
+#                    VBoxInternal2/SharedFoldersEnableSymlinksCreate/v-root: 1                
             vmware:
                 numvcpus: 1
             parallels:
@@ -58,7 +64,7 @@ vagrantfile:
                     exclude:
                         - .vagrant/
                         - .git/
-                    auto: 'false'
+                    auto: 'auto'
                 owner: www-data
                 group: www-data
         usable_port_range:
@@ -87,8 +93,12 @@ server:
     install: '1'
     packages:
         - vim
+        - git-core
+        - curl
+        - make
         - htop
         - curl
+        - acl
         - mc
 users_groups:
     install: '1'
@@ -102,7 +112,7 @@ locale:
             - en_GB.UTF-8
             - en_US.UTF-8
 firewall:
-    install: '1'
+    install: '0'
     rules: {  }
 cron:
     install: '1'
@@ -299,6 +309,7 @@ nodejs:
         - bower
         - sails
         - grunt-cli
+        - gulp
 hhvm:
     install: '0'
     nightly: 0
