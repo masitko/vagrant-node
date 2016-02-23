@@ -26,6 +26,9 @@ vagrantfile:
                 vflnp_angular2:
                     host: '5040'
                     guest: '5040'
+#                vflnp_livereload:
+#                    host: '35729'
+#                    guest: '35729'
         post_up_message: ''
         provider:
             virtualbox:
