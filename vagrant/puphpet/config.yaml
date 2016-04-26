@@ -17,15 +17,21 @@ vagrantfile:
                 vflnp_rxy6a92xkgwl:
                     host: '5080'
                     guest: '80'
+                vflnp_pblue:
+                    host: '5035'
+                    guest: '5035'
                 vflnp_sails:
-                    host: '5037'
-                    guest: '5037'
+                    host: '5057'
+                    guest: '5057'
                 vflnp_angular:
-                    host: '5038'
-                    guest: '5038'
+                    host: '5058'
+                    guest: '5058'
                 vflnp_angular2:
                     host: '5040'
                     guest: '5040'
+                vflnp_1337:
+                    host: '5337'
+                    guest: '1337'
 #                vflnp_livereload:
 #                    host: '35729'
 #                    guest: '35729'
